@@ -1,0 +1,28 @@
+body {
+  background-color: #e2d0bd !important;
+}
+
+h2 {  
+  font-family: 'Cormorant SC', serif !important;
+  font-size: 40px !important;
+  padding-top: 24px;
+}
+
+i {
+  margin-right:5px;
+}
+
+.quote{
+  font-family: 'Playball', cursive;;
+  font-size: 30px;
+}
+
+.author{
+  font-family:Roboto Condensed;
+  font-size: 16px;
+}
+
+#tweetQuote{
+  background-color:#4099FF;
+  color:#fff;
+}
