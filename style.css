@@ -1,28 +1,81 @@
 body {
-  background-color: #e2d0bd !important;
+  transition: all .5s ease;
 }
 
-h2 {  
-  font-family: 'Cormorant SC', serif !important;
-  font-size: 40px !important;
-  padding-top: 24px;
+/*----- QUOTE BOX ----*/
+.quoteBox {
+  width: 35%;
+  min-height: 150px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #fff;
 }
 
-i {
-  margin-right:5px;
+.fa-quote-left {
+  font-size: 28px;
+  margin-right: 12px;
 }
 
-.quote{
-  font-family: 'Playball', cursive;;
-  font-size: 30px;
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+  display: inline-block;
 }
 
-.author{
-  font-family:Roboto Condensed;
-  font-size: 16px;
+.author {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: 'Libre Baskerville', serif;
 }
 
-#tweetQuote{
-  background-color:#4099FF;
-  color:#fff;
+/*----- BUTTONS ------*/
+.btn-row {
+  text-align: center;
+  display: flex;  
+  align-items: center;
+  justify-content: end;
 }
+
+.btn {
+  height: 45px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+#tweetQuoteBtn {
+  width: 45px;  
+  font-size: 20px;
+}
+
+#newQuoteBtn {
+  width: 128px;
+  margin-left: 5px;
+  font-family: 'Montserrat', serif;
+}
+
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (min-width: 361px) and (max-width: 992px) {
+  .quoteBox {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .quoteBox {
+    width: 80%;
+    margin: 20px auto;    
+  }
+
+  .quote {
+    font-size: 15px;
+  }
+
+  .author {
+    font-size: 13px;
+  }
+}
+
